@@ -1,0 +1,142 @@
+@import "compass/reset";
+@import url(http://fonts.googleapis.com/css?family=Lato|Raleway:300);
+
+/* $back: #2C2D33;
+$green: #74b73f;
+ */
+
+$back: #65B73F;
+$green: #2C2D3E;
+$light: lighten($back, 75%);
+
+@mixin font {
+	font-family: Raleway, sans-serif;
+}
+
+nav {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 2em;
+	background: $green;
+	top: 0;
+	left: 0;
+	h1 {
+		color: $light;
+		font-size: 20pt;
+		@include font;
+	}
+}
+
+.panels {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+	background: none !important; 
+}
+
+.sidebar {
+	float: right;
+	height: 100%;
+	width: 20%;
+	background: lighten($back, 10%);
+	padding: 2em;
+	box-sizing: border-box;
+	pointer-events: auto;
+	li {
+		text-align: right;
+		font-size: 11pt;
+		color: $green;
+		padding: .25em;
+		.subtext {
+			padding: .1em 0;
+		}
+		.text {
+			font-weight: bold;
+		}
+		@include font;
+		
+	}
+}
+
+html, body {
+	background: $back;
+	height: 100%;
+}
+
+.page {
+	margin-top: 4em;
+	width: 80%;
+	float: left;
+	padding: 2em;
+	box-sizing: border-box;
+}
+
+.expandable {
+	cursor: pointer;
+	
+	& > .content {
+		display: none;	
+	}
+	
+	&.expand {
+		& > .content {
+			display: block;
+		}
+	}
+}
+
+.proof {
+	padding: 2em;
+	background: $light;
+	line-height: 1.5em;
+	vertical-align: middle; 
+	@include font;
+
+	
+	h1 {
+		font-size: 14pt;
+		font-weight: bold;
+	}
+	
+	h2 {
+		padding: 1em;
+	}
+
+	
+	ol {
+		padding-left: 1em;
+	}
+	
+	li {
+		padding: .5em 0;
+		clear: both;
+		&:hover {
+			.text {
+				font-weight: bold;
+			}
+		}
+		
+		&.expand {
+			.text {
+				font-weight: bold;
+			}
+			
+		}
+	}
+	
+	
+	.text {
+		
+	}
+	
+	.annotate {
+		padding: 1em;
+		font-size: 11pt;
+		border: 1px solid darken($back,10%);
+		float: left;
+		clear: both;
+		margin-top: .5em;
+		
+	}
+}

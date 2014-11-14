@@ -1,0 +1,15 @@
+doctype html
+html
+	head
+		link(href="/css/stylesheets/main.css" type="text/css" rel="stylesheet")
+		script(data-main="/scripts/main.js" src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js")
+		block head 
+	body
+		script(id="proofTemplate" type="text/x-mustache")
+			.panels
+				nav
+					block nav
+				.sidebar
+					block sidebar
+			.page
+				block page	

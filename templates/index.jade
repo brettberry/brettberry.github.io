@@ -1,0 +1,34 @@
+extends _layout
+
+block nav
+	h1 Real Analysis
+	
+block sidebar
+	{{#sidebar}}
+	ol
+		{{#items}}
+		li.expandable 
+			.text {{text}}
+			.content 
+				{{#subitems}}
+				.subtext {{subtext}}
+				{{/subitems}}
+		{{/items}}		
+	{{/sidebar}}
+
+block page
+	{{#proof}}
+	.proof.expandable
+		h1 {{statement}}
+		.content
+			h2 Proof. 
+			ol
+				{{#steps}}
+				li.expandable 
+					.text {{text}}
+					{{#annotate}}
+					.content
+						.annotate {{annotate}}
+					{{/annotate}}
+				{{/steps}}
+	{{/proof}}

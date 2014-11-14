@@ -1,0 +1,192 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Raleway:300);
+/* line 5, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* $back: #2C2D33;
+$green: #74b73f;
+ */
+/* line 16, ../sass/main.scss */
+nav {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2em;
+  background: #2C2D3E;
+  top: 0;
+  left: 0;
+}
+/* line 23, ../sass/main.scss */
+nav h1 {
+  color: white;
+  font-size: 20pt;
+  font-family: Raleway, sans-serif;
+}
+
+/* line 30, ../sass/main.scss */
+.panels {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  background: none !important;
+}
+
+/* line 38, ../sass/main.scss */
+.sidebar {
+  float: right;
+  height: 100%;
+  width: 20%;
+  background: #81c861;
+  padding: 2em;
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+/* line 46, ../sass/main.scss */
+.sidebar li {
+  text-align: right;
+  font-size: 11pt;
+  color: #2C2D3E;
+  padding: .25em;
+  font-family: Raleway, sans-serif;
+}
+/* line 51, ../sass/main.scss */
+.sidebar li .subtext {
+  padding: .1em 0;
+}
+/* line 54, ../sass/main.scss */
+.sidebar li .text {
+  font-weight: bold;
+}
+
+/* line 62, ../sass/main.scss */
+html, body {
+  background: #65B73F;
+  height: 100%;
+}
+
+/* line 67, ../sass/main.scss */
+.page {
+  margin-top: 4em;
+  width: 80%;
+  float: left;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+/* line 75, ../sass/main.scss */
+.expandable {
+  cursor: pointer;
+}
+/* line 78, ../sass/main.scss */
+.expandable > .content {
+  display: none;
+}
+/* line 83, ../sass/main.scss */
+.expandable.expand > .content {
+  display: block;
+}
+
+/* line 89, ../sass/main.scss */
+.proof {
+  padding: 2em;
+  background: white;
+  line-height: 1.5em;
+  vertical-align: middle;
+  font-family: Raleway, sans-serif;
+}
+/* line 97, ../sass/main.scss */
+.proof h1 {
+  font-size: 14pt;
+  font-weight: bold;
+}
+/* line 102, ../sass/main.scss */
+.proof h2 {
+  padding: 1em;
+}
+/* line 107, ../sass/main.scss */
+.proof ol {
+  padding-left: 1em;
+}
+/* line 111, ../sass/main.scss */
+.proof li {
+  padding: .5em 0;
+  clear: both;
+}
+/* line 115, ../sass/main.scss */
+.proof li:hover .text {
+  font-weight: bold;
+}
+/* line 121, ../sass/main.scss */
+.proof li.expand .text {
+  font-weight: bold;
+}
+/* line 133, ../sass/main.scss */
+.proof .annotate {
+  padding: 1em;
+  font-size: 11pt;
+  border: 1px solid #509132;
+  float: left;
+  clear: both;
+  margin-top: .5em;
+}
